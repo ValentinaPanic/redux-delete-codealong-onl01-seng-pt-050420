@@ -4,7 +4,7 @@ import uuid from 'uuid';
 export default function manageTodo(state = {
   todos: [],
 }, action) {
-  console.log(action);
+  console.log(action.payload);
   switch (action.type) {
     case 'ADD_TODO':
       const todo ={
